@@ -4,6 +4,16 @@
  */
 public class InOrder {
 	public static void main (String[] args) {
-		//// Write your code here
+	boolean inOrder = true;
+	int prev = -1;
+	while (inOrder){
+		int current = (int) (10*Math.random());
+		if (current >= prev){
+			System.out.print(current + " ");
+			prev = current;
+		}else {
+			inOrder=false;
+		}
+	}
 	}
 }
