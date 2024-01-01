@@ -50,24 +50,8 @@ public class OneOfEachStats {
 		System.out.println("Number of families with 2 children: " + TwoChild);
 		System.out.println("Number of families with 3 children: " + ThreeChild);
 		System.out.println("Number of families with 4 or more children: " + FourOrMoReChild);
-<<<<<<< HEAD
 		System.out.println("The most common number of children is " + max + ".");
 	}
 }
 
 
-=======
-		System.out.println("The most common number of children is " + max + " .");
-	}
-}
-
-//// In the previous version of this program, you used a statement like:
-//// double rnd = Math.random();
-//// Where "rnd" is the variable that stores the generated random value.
-//// In this version of the program, replace this statement with:
-//// double rnd = generator.nextDouble();
-//// This statement will generate a random value in the range [0,1),
-//// just like you had in the previous version, except that the
-//// randomization will be based on the given seed.
-//// This is the only change that you have to do in the program.
->>>>>>> a7d461e93492a0ea3841c8186ff44868de395406
