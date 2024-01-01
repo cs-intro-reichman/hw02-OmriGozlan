@@ -5,6 +5,20 @@
  */
 public class OneOfEach {
 	public static void main (String[] args) {
-		//// Put your code here
+		boolean boy = false;
+		boolean girl = false;
+		int numOfChild = 0;
+		while(!(boy && girl)) {
+			if(Math.random() < 0.5){
+				boy=true;
+				System.out.print("b ");
+			} else {
+				girl = true;
+				System.out.print("g ");
+			}
+			numOfChild++;
+		}
+		System.out.println("\nYou made it... and you now have " + numOfChild + " children.");
+		}
 	}
-}
+
