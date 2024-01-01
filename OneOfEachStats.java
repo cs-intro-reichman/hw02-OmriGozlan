@@ -41,25 +41,17 @@ public class OneOfEachStats {
 		}
 		double Average = (double) TotalChild/T;
 		String max = "2 children";
-		if (ThreeChild >= TwoChild){
+		if (ThreeChild >= TwoChild && ThreeChild >= FourOrMoReChild){
 			max = "3 children";
-		} else if (FourOrMoReChild >= ThreeChild) {
+		} else if (FourOrMoReChild >= ThreeChild && FourOrMoReChild >= TwoChild) {
 			max = "4 or more children";
 		}
 		System.out.println("Average: " + Average + " children to get at least one of each gender.");
 		System.out.println("Number of families with 2 children: " + TwoChild);
 		System.out.println("Number of families with 3 children: " + ThreeChild);
 		System.out.println("Number of families with 4 or more children: " + FourOrMoReChild);
-		System.out.println("The most common number of children is " + max + " .");
+		System.out.println("The most common number of children is " + max + ".");
 	}
 }
 
-//// In the previous version of this program, you used a statement like:
-//// double rnd = Math.random();
-//// Where "rnd" is the variable that stores the generated random value.
-//// In this version of the program, replace this statement with:
-//// double rnd = generator.nextDouble();
-//// This statement will generate a random value in the range [0,1),
-//// just like you had in the previous version, except that the
-//// randomization will be based on the given seed.
-//// This is the only change that you have to do in the program.
+
