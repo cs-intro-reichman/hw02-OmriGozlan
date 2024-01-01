@@ -40,11 +40,11 @@ public class OneOfEachStats {
 			}
 		}
 		double Average = (double) TotalChild/T;
-		String max = "2 children";
+		String max = "2";
 		if (ThreeChild > TwoChild && ThreeChild >= FourOrMoReChild){
-			max = "3 children";
+			max = "3";
 		} else if (FourOrMoReChild > ThreeChild && FourOrMoReChild > TwoChild) {
-			max = "4 or more children";
+			max = "4 or more";
 		}
 		System.out.println("Average: " + Average + " children to get at least one of each gender.");
 		System.out.println("Number of families with 2 children: " + TwoChild);
